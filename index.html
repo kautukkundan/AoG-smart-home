@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  
+  <!-- External styles -->
+  <link rel="stylesheet" href="./styles.css">
+  
+  <!-- controller script -->
+  <script src="./controller.js"></script>
+  
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
+  
+  <!-- actions script -->
+  <script src="./actions.js"></script>
+  
+  
+  <title>Smart Home Test</title>
+</head>
+<body>
+  <div class="container-fluid" style="height: 100vh; background: aqua; padding: 5vh">
+    
+    <div class="container-fluid" style="height: 90vh; background: azure">
+      
+      <div class="row" style="height: 15vh; padding: 1vh">
+        <div class="col  text-center">
+          <h1>SMART HOME CONTROL - DEMO</h1>
+        </div>
+      </div>
+      
+      <div class="row" style="height: 75vh;">
+        
+        <div class="col-6"> 
+          
+          <div class="row" style="height: 37.5vh;">              
+            <div class="col text-center">
+              <h4>Lights Control</h4>
+              <br><br>
+              <div id="light" class="lightOff"></div>
+            </div>
+          </div>
+          
+          <div class="row" style="height: 37.5vh;">              
+            <div class="col text-center">
+              <h4>Fan Control</h4>
+              <br><br>
+              <div class="row">
+                
+                <!-- FAN 1 -->
+                <div style="height: 20vh; width: 20vh; margin: auto; ">
+                  <div id="fan1" class="fanstop" style="background: url('./images/fan.png'); background-size: cover; height: 20vh;"></div>
+                  <h6>Fan 1</h6>
+                </div>
+                
+                <!-- FAN 2 -->
+                <div style="height: 20vh; width: 20vh; margin: auto; ">
+                  <div id="fan2" class="fanstop" class="fan2stop" style="background: url('./images/fan.png'); background-size: cover; height: 20vh;"></div>
+                  <h6>Fan 2</h6>
+                </div>
+                
+              </div>
+            </div>
+          </div>        
+          
+        </div>
+        
+        <div class="col-6">          
+          <div class="row" style="height: 70vh; border-left: dotted 1px grey ">              
+            <div class="col text-center my-auto;">
+              <div style="background: url('./images/ac.png'); background-size: cover; margin: auto; height: 20vh; width: 20vh;"></div>
+              <br><br>                  
+              <h4>Thermostat Control</h4>
+              <br><br>
+              <div class="row">
+                <div style="height: 20vh; width: 20vh; margin: auto; ">
+                  <div id="thermoState" class="thermoOn" style="font-size: 10vh;">ON</div>
+                  <h6>Current State</h6>
+                </div>
+                <div style="height: 20vh; width: 20vh; margin: auto; ">
+                  <div id="temp" style="font-size: 10vh">22°C</div>
+                  <h6>Temperature</h6>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
